@@ -1,0 +1,20 @@
+digraph AFD_DET {
+  rankdir=LR;
+  nodesep=0.9;
+  ranksep=1.0;
+  node [shape=circle, fontname="DejaVu Sans"];
+  edge [fontname="DejaVu Sans", fontsize=11];
+  start [shape=point];
+  A [label="A={n0}"];
+  B [shape=doublecircle, label="B={n1,n2,n4}"];
+  C [shape=doublecircle, label="C={n1,n2,n3,n4}"];
+  D [label="Ø"];
+  start -> A;
+  A -> B [label="[a-z]"];
+  A -> D [label="otro", headport=w];
+  B -> C [label="[A-Za-z0-9_]"];
+  B -> D [label="otro", headport=nw];
+  C -> C [label="[A-Za-z0-9_]"];
+  C -> D [label="otro", headport=n];
+  D -> D [label="cualquier símbolo", headport=s, tailport=s];
+}

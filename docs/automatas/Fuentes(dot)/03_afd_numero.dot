@@ -1,0 +1,15 @@
+digraph AFD_NUMERO {
+  rankdir=LR;
+  node [shape=circle, fontname="DejaVu Sans"];
+  start [shape=point];
+  q0 [label="q0"];
+  qi [shape=doublecircle, label="qI\nENTERO"];
+  qdot [label="q."];
+  qr [shape=doublecircle, label="qR\nREAL"];
+  start -> q0;
+  q0 -> qi [label="[0-9]"];
+  qi -> qi [label="[0-9]"];
+  qi -> qdot [label="."];
+  qdot -> qr [label="[0-9]"];
+  qr -> qr [label="[0-9]"];
+}

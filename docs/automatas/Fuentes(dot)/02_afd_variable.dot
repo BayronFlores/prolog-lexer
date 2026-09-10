@@ -1,0 +1,13 @@
+digraph AFD_VARIABLE {
+  rankdir=LR;
+  node [shape=circle, fontname="DejaVu Sans"];
+  start [shape=point];
+  q0 [label="q0"];
+  qa [shape=doublecircle, label="qA\n_ anónima"];
+  qv [shape=doublecircle, label="qV\nVARIABLE"];
+  start -> q0;
+  q0 -> qv [label="[A-Z]"];
+  q0 -> qa [label="_"];
+  qa -> qv [label="[A-Za-z0-9_]"];
+  qv -> qv [label="[A-Za-z0-9_]"];
+}

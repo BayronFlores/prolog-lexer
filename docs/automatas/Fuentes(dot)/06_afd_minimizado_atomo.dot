@@ -1,0 +1,17 @@
+digraph AFD_MIN {
+  rankdir=LR;
+  nodesep=0.9;
+  ranksep=1.0;
+  node [shape=circle, fontname="DejaVu Sans"];
+  edge [fontname="DejaVu Sans", fontsize=11];
+  start [shape=point];
+  A [label="A"];
+  BC [shape=doublecircle, label="B∪C\nATOMO"];
+  D [label="Ø"];
+  start -> A;
+  A -> BC [label="[a-z]"];
+  A -> D [label="otro", headport=nw, tailport=sw];
+  BC -> BC [label="[A-Za-z0-9_]"];
+  BC -> D [label="otro", headport=n];
+  D -> D [label="cualquier símbolo", headport=s, tailport=s];
+}

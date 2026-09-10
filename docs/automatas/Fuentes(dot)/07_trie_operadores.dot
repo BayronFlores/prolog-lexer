@@ -1,0 +1,29 @@
+digraph TRIE_OP {
+  rankdir=LR;
+  node [shape=circle, fontname="DejaVu Sans"];
+  start [shape=point];
+  q0 [label="q0"];
+  eq [shape=doublecircle, label="=\nOP_UNIFICA"];
+  eqq [shape=doublecircle, label="=="];
+  eqdot [label="=."];
+  equniv [shape=doublecircle, label="=.."];
+  bs [label="\\"];
+  bs_eq [shape=doublecircle, label="\\="];
+  bs_eqeq [shape=doublecircle, label="\\=="];
+  colon [shape=doublecircle, label=":"];
+  rule [shape=doublecircle, label=":-"];
+  qmark [label="?"];
+  query [shape=doublecircle, label="?-"];
+  start -> q0;
+  q0 -> eq [label="="];
+  eq -> eqq [label="="];
+  eq -> eqdot [label="."];
+  eqdot -> equniv [label="."];
+  q0 -> bs [label="\\"];
+  bs -> bs_eq [label="="];
+  bs_eq -> bs_eqeq [label="="];
+  q0 -> colon [label=":"];
+  colon -> rule [label="-"];
+  q0 -> qmark [label="?"];
+  qmark -> query [label="-"];
+}
