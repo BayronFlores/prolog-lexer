@@ -1,0 +1,1 @@
+T =.. [padre, juan, ana].
