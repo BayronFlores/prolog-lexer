@@ -1,0 +1,52 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_anonymous_vs_named_variable (test_lexer.LexerFocusedTests.test_anonymous_vs_named_variable) ... ok
+test_complete_error_program_recovers (test_lexer.LexerFocusedTests.test_complete_error_program_recovers) ... ok
+test_complete_valid_program (test_lexer.LexerFocusedTests.test_complete_valid_program) ... ok
+test_corpus_invalido_01_01_atomo_sin_cierre (test_lexer.LexerFocusedTests.test_corpus_invalido_01_01_atomo_sin_cierre) ... ok
+test_corpus_invalido_02_02_cadena_sin_cierre (test_lexer.LexerFocusedTests.test_corpus_invalido_02_02_cadena_sin_cierre) ... ok
+test_corpus_invalido_03_03_comentario_sin_cierre (test_lexer.LexerFocusedTests.test_corpus_invalido_03_03_comentario_sin_cierre) ... ok
+test_corpus_invalido_04_04_caracter_no_admitido (test_lexer.LexerFocusedTests.test_corpus_invalido_04_04_caracter_no_admitido) ... ok
+test_corpus_invalido_05_05_numero_mal_formado (test_lexer.LexerFocusedTests.test_corpus_invalido_05_05_numero_mal_formado) ... ok
+test_corpus_invalido_06_06_real_mal_formado (test_lexer.LexerFocusedTests.test_corpus_invalido_06_06_real_mal_formado) ... ok
+test_corpus_invalido_07_07_varios_caracteres (test_lexer.LexerFocusedTests.test_corpus_invalido_07_07_varios_caracteres) ... ok
+test_corpus_invalido_08_08_error_y_recuperacion (test_lexer.LexerFocusedTests.test_corpus_invalido_08_08_error_y_recuperacion) ... ok
+test_corpus_valido_01_01_atomo_simple (test_lexer.LexerFocusedTests.test_corpus_valido_01_01_atomo_simple) ... ok
+test_corpus_valido_02_02_atomo_guion_bajo (test_lexer.LexerFocusedTests.test_corpus_valido_02_02_atomo_guion_bajo) ... ok
+test_corpus_valido_03_03_atomo_citado (test_lexer.LexerFocusedTests.test_corpus_valido_03_03_atomo_citado) ... ok
+test_corpus_valido_04_04_atomo_citado_operador (test_lexer.LexerFocusedTests.test_corpus_valido_04_04_atomo_citado_operador) ... ok
+test_corpus_valido_05_05_variable_mayuscula (test_lexer.LexerFocusedTests.test_corpus_valido_05_05_variable_mayuscula) ... ok
+test_corpus_valido_06_06_variable_nombre (test_lexer.LexerFocusedTests.test_corpus_valido_06_06_variable_nombre) ... ok
+test_corpus_valido_07_07_variable_guion (test_lexer.LexerFocusedTests.test_corpus_valido_07_07_variable_guion) ... ok
+test_corpus_valido_08_08_variable_anonima (test_lexer.LexerFocusedTests.test_corpus_valido_08_08_variable_anonima) ... ok
+test_corpus_valido_09_09_entero (test_lexer.LexerFocusedTests.test_corpus_valido_09_09_entero) ... ok
+test_corpus_valido_10_10_real (test_lexer.LexerFocusedTests.test_corpus_valido_10_10_real) ... ok
+test_corpus_valido_11_11_cadena (test_lexer.LexerFocusedTests.test_corpus_valido_11_11_cadena) ... ok
+test_corpus_valido_12_12_regla (test_lexer.LexerFocusedTests.test_corpus_valido_12_12_regla) ... ok
+test_corpus_valido_13_13_consulta (test_lexer.LexerFocusedTests.test_corpus_valido_13_13_consulta) ... ok
+test_corpus_valido_14_14_comparacion (test_lexer.LexerFocusedTests.test_corpus_valido_14_14_comparacion) ... ok
+test_corpus_valido_15_15_univ (test_lexer.LexerFocusedTests.test_corpus_valido_15_15_univ) ... ok
+test_corpus_valido_16_16_aritmetica (test_lexer.LexerFocusedTests.test_corpus_valido_16_16_aritmetica) ... ok
+test_corpus_valido_17_17_control (test_lexer.LexerFocusedTests.test_corpus_valido_17_17_control) ... ok
+test_corpus_valido_18_18_delimitadores (test_lexer.LexerFocusedTests.test_corpus_valido_18_18_delimitadores) ... ok
+test_corpus_valido_19_19_comentarios (test_lexer.LexerFocusedTests.test_corpus_valido_19_19_comentarios) ... ok
+test_corpus_valido_20_20_escape (test_lexer.LexerFocusedTests.test_corpus_valido_20_20_escape) ... ok
+test_lexeme_table_deduplicates (test_lexer.LexerFocusedTests.test_lexeme_table_deduplicates) ... ok
+test_maximal_munch_operators (test_lexer.LexerFocusedTests.test_maximal_munch_operators) ... ok
+test_nested_block_comments (test_lexer.LexerFocusedTests.test_nested_block_comments) ... ok
+test_number_and_final_period (test_lexer.LexerFocusedTests.test_number_and_final_period) ... ok
+test_positions (test_lexer.LexerFocusedTests.test_positions) ... ok
+test_sign_is_operator (test_lexer.LexerFocusedTests.test_sign_is_operator) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.002s
+
+OK

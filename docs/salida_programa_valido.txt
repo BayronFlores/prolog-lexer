@@ -1,0 +1,109 @@
+TOKENS
+<ATOMO, 'padre', 2, 1, idx=1>
+<PARENTESIS_IZQ, '(', 2, 6>
+<ATOMO, 'juan', 2, 7, idx=2>
+<COMA, ',', 2, 11>
+<ATOMO, 'ana', 2, 13, idx=3>
+<PARENTESIS_DER, ')', 2, 16>
+<PUNTO, '.', 2, 17>
+<ATOMO, 'padre', 3, 1, idx=1>
+<PARENTESIS_IZQ, '(', 3, 6>
+<ATOMO, 'juan', 3, 7, idx=2>
+<COMA, ',', 3, 11>
+<ATOMO, 'pedro', 3, 13, idx=4>
+<PARENTESIS_DER, ')', 3, 18>
+<PUNTO, '.', 3, 19>
+<ATOMO, 'edad', 4, 1, idx=5>
+<PARENTESIS_IZQ, '(', 4, 5>
+<ATOMO, 'juan', 4, 6, idx=2>
+<COMA, ',', 4, 10>
+<NUMERO_ENTERO, '52', 4, 12, idx=6>
+<PARENTESIS_DER, ')', 4, 14>
+<PUNTO, '.', 4, 15>
+<ATOMO, 'nombre_completo', 5, 1, idx=7>
+<PARENTESIS_IZQ, '(', 5, 16>
+<ATOMO, 'juan', 5, 17, idx=2>
+<COMA, ',', 5, 21>
+<ATOMO_CITADO, '\'Juan Pérez\'', 5, 23, idx=8>
+<PARENTESIS_DER, ')', 5, 35>
+<PUNTO, '.', 5, 36>
+<ATOMO, 'mensaje', 6, 1, idx=9>
+<PARENTESIS_IZQ, '(', 6, 8>
+<CADENA, '"familia de ejemplo"', 6, 9, idx=10>
+<PARENTESIS_DER, ')', 6, 29>
+<PUNTO, '.', 6, 30>
+<ATOMO, 'abuelo', 9, 1, idx=11>
+<PARENTESIS_IZQ, '(', 9, 7>
+<VARIABLE, 'X', 9, 8, idx=12>
+<COMA, ',', 9, 9>
+<VARIABLE, 'Z', 9, 11, idx=13>
+<PARENTESIS_DER, ')', 9, 12>
+<OP_REGLA, ':-', 9, 14>
+<ATOMO, 'padre', 10, 5, idx=1>
+<PARENTESIS_IZQ, '(', 10, 10>
+<VARIABLE, 'X', 10, 11, idx=12>
+<COMA, ',', 10, 12>
+<VARIABLE, 'Y', 10, 14, idx=14>
+<PARENTESIS_DER, ')', 10, 15>
+<COMA, ',', 10, 16>
+<ATOMO, 'padre', 11, 5, idx=1>
+<PARENTESIS_IZQ, '(', 11, 10>
+<VARIABLE, 'Y', 11, 11, idx=14>
+<COMA, ',', 11, 12>
+<VARIABLE, 'Z', 11, 14, idx=13>
+<PARENTESIS_DER, ')', 11, 15>
+<PUNTO, '.', 11, 16>
+<ATOMO, 'es_mayor', 13, 1, idx=15>
+<PARENTESIS_IZQ, '(', 13, 9>
+<VARIABLE, 'X', 13, 10, idx=12>
+<PARENTESIS_DER, ')', 13, 11>
+<OP_REGLA, ':-', 13, 13>
+<ATOMO, 'edad', 14, 5, idx=5>
+<PARENTESIS_IZQ, '(', 14, 9>
+<VARIABLE, 'X', 14, 10, idx=12>
+<COMA, ',', 14, 11>
+<VARIABLE, 'E', 14, 13, idx=16>
+<PARENTESIS_DER, ')', 14, 14>
+<COMA, ',', 14, 15>
+<VARIABLE, 'E', 15, 5, idx=16>
+<OP_MAYOR_IGUAL, '>=', 15, 7>
+<NUMERO_ENTERO, '18', 15, 10, idx=17>
+<COMA, ',', 15, 12>
+<OP_NEGACION, '\\+', 16, 5>
+<VARIABLE, 'E', 16, 8, idx=16>
+<OP_MENOR_IGUAL, '=<', 16, 10>
+<NUMERO_ENTERO, '0', 16, 13, idx=18>
+<PUNTO, '.', 16, 14>
+<OP_CONSULTA, '?-', 18, 1>
+<ATOMO, 'abuelo', 18, 4, idx=11>
+<PARENTESIS_IZQ, '(', 18, 10>
+<ATOMO, 'juan', 18, 11, idx=2>
+<COMA, ',', 18, 15>
+<VARIABLE, 'Quien', 18, 17, idx=19>
+<PARENTESIS_DER, ')', 18, 22>
+<PUNTO, '.', 18, 23>
+
+TABLA DE LEXEMAS
+idx | categoría       | lexema
+----+-----------------+-------------------------
+  1 | ATOMO           | padre
+  2 | ATOMO           | juan
+  3 | ATOMO           | ana
+  4 | ATOMO           | pedro
+  5 | ATOMO           | edad
+  6 | NUMERO_ENTERO   | 52
+  7 | ATOMO           | nombre_completo
+  8 | ATOMO_CITADO    | 'Juan Pérez'
+  9 | ATOMO           | mensaje
+ 10 | CADENA          | "familia de ejemplo"
+ 11 | ATOMO           | abuelo
+ 12 | VARIABLE        | X
+ 13 | VARIABLE        | Z
+ 14 | VARIABLE        | Y
+ 15 | ATOMO           | es_mayor
+ 16 | VARIABLE        | E
+ 17 | NUMERO_ENTERO   | 18
+ 18 | NUMERO_ENTERO   | 0
+ 19 | VARIABLE        | Quien
+
+Análisis finalizado sin errores léxicos.

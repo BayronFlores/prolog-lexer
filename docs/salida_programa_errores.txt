@@ -1,0 +1,38 @@
+TOKENS
+<ATOMO, 'dato', 2, 1, idx=1>
+<PARENTESIS_IZQ, '(', 2, 5>
+<PARENTESIS_DER, ')', 2, 11>
+<PUNTO, '.', 2, 12>
+<ATOMO, 'persona', 3, 1, idx=2>
+<PARENTESIS_IZQ, '(', 3, 8>
+<ATOMO, 'otro', 4, 1, idx=3>
+<PARENTESIS_IZQ, '(', 4, 5>
+<PARENTESIS_DER, ')', 4, 7>
+<PUNTO, '.', 4, 8>
+<ATOMO, 'texto', 5, 1, idx=4>
+<PARENTESIS_IZQ, '(', 5, 6>
+<ATOMO, 'padre', 6, 1, idx=5>
+<PARENTESIS_IZQ, '(', 6, 6>
+<ATOMO, 'juan', 6, 7, idx=6>
+<COMA, ',', 6, 11>
+<ATOMO, 'ana', 6, 13, idx=7>
+<PARENTESIS_DER, ')', 6, 16>
+<PUNTO, '.', 6, 17>
+
+TABLA DE LEXEMAS
+idx | categoría       | lexema
+----+-----------------+-------------------------
+  1 | ATOMO           | dato
+  2 | ATOMO           | persona
+  3 | ATOMO           | otro
+  4 | ATOMO           | texto
+  5 | ATOMO           | padre
+  6 | ATOMO           | juan
+  7 | ATOMO           | ana
+
+ERRORES LÉXICOS
+[NUMERO_MAL_FORMADO] línea 2, columna 6: Número mal formado: un literal numérico no puede continuar inmediatamente con letras o '_'. Fragmento: '12abc'
+[ATOMO_SIN_CIERRE] línea 3, columna 9: Átomo entre comillas simples sin cierre antes del fin de línea. Fragmento: "'Juan Pérez)."
+[CARACTER_NO_ADMITIDO] línea 4, columna 6: Carácter no admitido: '@'. Fragmento: '@'
+[CADENA_SIN_CIERRE] línea 5, columna 7: Cadena entre comillas dobles sin cierre antes del fin de línea. Fragmento: '"cadena abierta'
+[COMENTARIO_SIN_CIERRE] línea 7, columna 1: Comentario de bloque sin cierre '*/'. Fragmento: '/* comentario que no termina\\n'
