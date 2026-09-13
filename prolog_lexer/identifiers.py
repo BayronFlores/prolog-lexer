@@ -9,7 +9,7 @@ que se compara el lexema contra ``WORD_OPERATORS``.
 
 from __future__ import annotations
 
-from .cursor import ASCII_LETTERS, is_ascii_alnum
+from .cursor import is_ascii_alnum, is_ascii_letter
 from .token_tables import WORD_OPERATORS
 
 
@@ -26,7 +26,7 @@ class IdentifierScanning:
 
         lexeme = self.source[start_i:self.i]
 
-        if lexeme[0] in ASCII_LETTERS and lexeme[0].islower():
+        if is_ascii_letter(lexeme[0]) and lexeme[0].islower():
             self._emit(
                 WORD_OPERATORS.get(lexeme, "ATOMO"),
                 lexeme,

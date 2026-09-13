@@ -42,6 +42,10 @@ Con tabla de lexemas e índices:
 python main.py tests/corpus/programa_valido.pl --tabla --atributos
 ```
 
+```bash
+python main.py tests/corpus/programa_errores.pl --tabla --atributos
+```
+
 ## Pruebas
 
 ```bash

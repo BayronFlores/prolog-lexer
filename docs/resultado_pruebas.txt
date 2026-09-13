@@ -1,4 +1,5 @@
 test_anonymous_vs_named_variable (test_lexer.LexerFocusedTests.test_anonymous_vs_named_variable) ... ok
+test_ascii_numbers_and_whitespace (test_lexer.LexerFocusedTests.test_ascii_numbers_and_whitespace) ... ok
 test_complete_error_program_recovers (test_lexer.LexerFocusedTests.test_complete_error_program_recovers) ... ok
 test_complete_valid_program (test_lexer.LexerFocusedTests.test_complete_valid_program) ... ok
 test_corpus_invalido_01_01_atomo_sin_cierre (test_lexer.LexerFocusedTests.test_corpus_invalido_01_01_atomo_sin_cierre) ... ok
@@ -37,8 +38,10 @@ test_number_and_final_period (test_lexer.LexerFocusedTests.test_number_and_final
 test_positions (test_lexer.LexerFocusedTests.test_positions) ... ok
 test_quoted_atom_and_string_allow_non_ascii (test_lexer.LexerFocusedTests.test_quoted_atom_and_string_allow_non_ascii) ... ok
 test_sign_is_operator (test_lexer.LexerFocusedTests.test_sign_is_operator) ... ok
+test_unicode_digits_are_not_numbers (test_lexer.LexerFocusedTests.test_unicode_digits_are_not_numbers) ... ok
+test_unicode_whitespace_is_not_ignored (test_lexer.LexerFocusedTests.test_unicode_whitespace_is_not_ignored) ... ok
 
 ----------------------------------------------------------------------
-Ran 39 tests in 0.511s
+Ran 42 tests in 0.040s
 
 OK
